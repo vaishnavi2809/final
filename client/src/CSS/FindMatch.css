@@ -1,0 +1,124 @@
+/* General Styles */
+main {
+    padding: 24px;
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0); /* Gradient background */
+    min-height: 100vh;
+  }
+  
+  /* Intro Section */
+  .intro {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  }
+  
+  .intro p {
+    font-size: 1.25rem; /* Slightly larger font size */
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Discover Users Section */
+  .discover {
+    margin-bottom: 32px;
+  }
+  
+  .discover h2 {
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center; /* Center user cards */
+  }
+  
+  .user-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    max-width: 300px;
+    margin: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .user-card:hover {
+    transform: translateY(-8px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .user-card h3 {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-card p {
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .user-card button {
+    margin-top: 12px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .user-card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly increase button size on hover */
+  }
+  
+  /* Activity Feed Section */
+  .activity-feed {
+    text-align: center;
+  }
+  
+  .activity-feed h2 {
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .activity-feed ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .activity-feed ul li {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #555;
+    transition: background-color 0.3s ease;
+  }
+  
+  .activity-feed ul li:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+  }
+  

@@ -1,0 +1,89 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gray;
+    color: #fff;
+    position: relative;
+  }
+  
+  .nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu li {
+    padding: 5px 10px;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header-buttons .btn {
+    background-color: #080808; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-buttons .btn:hover {
+    background-color: #32373b; /* Darker shade of primary color */
+  }
+  
+  .header-buttons .btn:active {
+    background-color: #4d5257; /* Even darker shade for active state */
+  }
+  
+  
+  /* Responsive Design */
+  .menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: gray;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .btn {
+      margin-left: 10px;
+    }
+  }
+  
